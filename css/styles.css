@@ -566,6 +566,11 @@ img {
 	overflow-y: scroll;
 }
 
+.mobile-menu__wrapper {
+	position: absolute;
+	bottom: 40px;
+}
+
 body.mobile-menu__show .mobile-menu {
 	transform: translateX(0);
 }
@@ -597,7 +602,6 @@ body.mobile-menu__show .mobile-menu {
 	display: flex;
 	flex-direction: column;
 	gap: 40px;
-	margin-bottom: 204px;
 }
 
 .mobile-menu__text {
@@ -870,6 +874,15 @@ body.show-modal .modal {
 	letter-spacing: 0.04em;
 }
 
+@media screen and (max-width: 321px) {
+	.mobile-menu__tel {
+		font-size: 25px;
+	}
+	.mobile-menu__soc-list {
+		gap: 25px;
+	}
+}
+
 @media screen and (min-width: 428px) {
 	.header {
 		width: 428px;
@@ -900,12 +913,12 @@ body.show-modal .modal {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		gap: 0;
+		gap: 12px;
 	}
 
 	.contacts a {
 		font-size: 12px;
-		padding: 6px 0;
+		padding: 0;
 	}
 
 	.logo {
@@ -1011,7 +1024,7 @@ body.show-modal .modal {
 
 @media screen and (min-width: 1158px) {
 	.container {
-		width: 1188px;
+		width: 1158px;
 		padding: 0 15px;
 	}
 	.header {
@@ -1031,6 +1044,7 @@ body.show-modal .modal {
 	}
 	.hero {
 		max-width: 1440px;
+		padding: 188px 0;
 		background-image: linear-gradient(
 				rgba(46, 47, 66, 0.7),
 				rgba(46, 47, 66, 0.7)
@@ -1052,6 +1066,11 @@ body.show-modal .modal {
 
 	.section {
 		padding: 120px 0;
+	}
+
+	.benefits__title {
+		font-weight: 500;
+		font-size: 20px;
 	}
 
 	.benefits__wrapper {
@@ -1084,7 +1103,7 @@ body.show-modal .modal {
 	.team > .container,
 	.costumers > .container,
 	.footer > .container {
-		width: 1188px;
+		width: 1158px;
 	}
 
 	.footer > .container {
@@ -1106,7 +1125,7 @@ body.show-modal .modal {
 
 	.footer__social {
 		margin-bottom: 0;
-		margin-right: 80px;
+		margin-right: 78px;
 	}
 
 	.footer__form-input {
