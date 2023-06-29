@@ -557,6 +557,7 @@ img {
 	padding-top: 80px;
 	padding-bottom: 40px;
 	padding-left: 40px;
+	padding-right: 35px;
 	background-color: var(--default-white);
 
 	transform: translateX(100%);
@@ -633,13 +634,14 @@ body.mobile-menu__show .mobile-menu {
 
 .mobile-menu__tel {
 	font-weight: 700;
-	font-size: 25px;
+	font-size: 36px;
 	line-height: 1.11;
 
 	letter-spacing: 0.02em;
 
 	color: var(--color-accent);
 }
+
 .mobile-menu__mel {
 	font-weight: 500;
 	font-size: 20px;
@@ -651,7 +653,7 @@ body.mobile-menu__show .mobile-menu {
 }
 .mobile-menu__soc-list {
 	display: flex;
-	gap: 25px;
+	gap: 56px;
 }
 
 .mobile-menu__icon {
@@ -872,6 +874,18 @@ body.show-modal .modal {
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.04em;
+}
+
+/*! ------- Media Styles --------  */
+
+@media screen and (max-width: 427px) {
+	.mobile-menu__tel {
+		font-size: 25px;
+	}
+
+	.mobile-menu__soc-list {
+		gap: 25px;
+	}
 }
 
 @media screen and (min-width: 428px) {
